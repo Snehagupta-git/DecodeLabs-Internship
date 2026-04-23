@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pro Responsive Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <h1>ProApp</h1>
+    
+    <div class="nav-right">
+      <button onclick="toggleDarkMode()">🌙</button>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#api">Data</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero fade-in">
+  <h2>Build Like a Pro 🚀</h2>
+  <p>Advanced Responsive UI with API & Animations</p>
+  <button onclick="showToast()">Start</button>
+</section>
+
+<section id="features" class="features">
+  <div class="card">HTML5</div>
+  <div class="card">CSS Grid</div>
+  <div class="card">Flexbox</div>
+  <div class="card">JavaScript</div>
+</section>
+
+<!-- API DATA -->
+<section id="api" class="api-section">
+  <h2>Live Data (API)</h2>
+  <button onclick="loadData()">Load Users</button>
+  <div id="data"></div>
+</section>
+
+<!-- FORM -->
+<section id="features" class="features">
+
+  <article class="card">
+    <h3>HTML5</h3>
+    <p>Semantic structure for accessibility & SEO</p>
+  </article>
+
+  <article class="card">
+    <h3>CSS Grid</h3>
+    <p>Macro layout for responsive design</p>
+  </article>
+
+  <article class="card">
+    <h3>Flexbox</h3>
+    <p>Micro layout for components</p>
+  </article>
+
+  <article class="card">
+    <h3>JavaScript</h3>
+    <p>Dynamic interactivity</p>
+  </article>
+
+</section>
+
+</main>
+
+<div id="toast"></div>
+
+<footer>
+  <p>© 2026 Pro Project</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
